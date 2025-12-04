@@ -1,0 +1,64 @@
+cabal-version:       2.4
+
+name:                aoc25
+version:             0.1.0.0
+-- synopsis:
+-- description:
+-- bug-reports:
+license:             MIT
+license-file:        LICENSE
+author:              Sophia Caspe
+maintainer:          sophia.b.caspe@gmail.com
+-- copyright:
+-- category:
+extra-source-files:  CHANGELOG.md
+
+library
+  build-depends:         base
+                       , advent-of-code-api
+                       , advent-of-code-ocr
+                       , megaparsec
+                       , text
+                       , lens
+                       , generic-lens
+                       , split
+                       , containers
+                       , algebraic-graphs
+                       , linear
+                       , mtl
+                       , finite-typelits
+                       , recursion-schemes
+                       , free
+                       , comonad
+                       , groups
+                       , semigroupoids
+                       , MemoTrie
+                       , nonempty-containers
+                       , array
+                       , vector
+                       , foldl
+                       , strict-tuple
+                       , parallel
+                       , hmatrix
+
+  exposed-modules:     Day01
+                       Day02
+                       Day03
+                       Day04
+                       Day05
+                       Day06
+                       Day07
+                       Day08
+                       Day09
+                       Day10
+                       Day11
+                       Day12
+  other-modules:       Common.Runner
+                       Common.Parser
+                       Common.Util
+                       Common.Grid
+  ghc-options:         -Wno-x-partial
+  hs-source-dirs:      src
+  default-language:    GHC2021
+  default-extensions:  LambdaCase
+

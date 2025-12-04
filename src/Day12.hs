@@ -1,0 +1,14 @@
+module Day12 where
+
+import Common.Runner
+import Common.Parser
+import Common.Util
+
+part1 :: String -> Int
+part1 i = undefined
+
+pInput :: String -> a
+pInput = undefined
+
+solve :: Show a => (String -> a) -> IO (Either AoCError a)
+solve = runSolutionOnInput 12
